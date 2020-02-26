@@ -1,6 +1,6 @@
-package com.charter.enterprise.collatz.util;
+package com.blake.multithreaded.collatz.util;
 
-import com.charter.enterprise.collatz.model.CollatzDataModel;
+import com.blake.multithreaded.collatz.model.CollatzDataModel;
 
 import java.util.concurrent.Callable;
 

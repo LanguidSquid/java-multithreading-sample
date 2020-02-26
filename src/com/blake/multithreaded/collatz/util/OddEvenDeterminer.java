@@ -1,4 +1,4 @@
-package com.charter.enterprise.collatz.util;
+package com.blake.multithreaded.collatz.util;
 
 public class OddEvenDeterminer {
 

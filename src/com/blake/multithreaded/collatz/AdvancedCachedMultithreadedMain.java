@@ -1,7 +1,8 @@
-package com.charter.enterprise.collatz;
+package com.blake.multithreaded.collatz;
 
-import com.charter.enterprise.collatz.model.CollatzDataModel;
-import com.charter.enterprise.collatz.util.Collatz;
+import com.blake.multithreaded.collatz.model.CollatzDataModel;
+import com.blake.multithreaded.collatz.util.Collatz;
+import com.blake.multithreaded.collatz.util.CollatzInfoPrinter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +23,7 @@ public class AdvancedCachedMultithreadedMain {
         List<CollatzDataModel> collatzList = new ArrayList<>();
         ExecutorService executors = new ThreadPoolExecutor(1, 10000, 5, TimeUnit.SECONDS, new LinkedBlockingQueue<>());
 
-        for(int i = 1; i <= 99; i++) {
+        for(int i = 1; i <= 999; i++) {
             collatzFutureList.add(executors.submit(new Collatz(i)));
         }
 
@@ -39,7 +40,7 @@ public class AdvancedCachedMultithreadedMain {
 
         executors.shutdown();
 
-//        new CollatzInfoPrinter().prettyPrintCollatzList(collatzList);
+        new CollatzInfoPrinter().prettyPrintCollatzList(collatzList);
 
         System.out.format("the elapsed calculation time is %8d ms", elapsedTime);
     }

@@ -1,4 +1,4 @@
-package com.charter.enterprise.collatz.model;
+package com.blake.multithreaded.collatz.model;
 
 public class CollatzDataModel implements Comparable<CollatzDataModel> {
 

@@ -1,7 +1,8 @@
-package com.charter.enterprise.collatz;
+package com.blake.multithreaded.collatz;
 
-import com.charter.enterprise.collatz.model.CollatzDataModel;
-import com.charter.enterprise.collatz.util.Collatz;
+import com.blake.multithreaded.collatz.model.CollatzDataModel;
+import com.blake.multithreaded.collatz.util.Collatz;
+import com.blake.multithreaded.collatz.util.CollatzInfoPrinter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +25,7 @@ public class SingleThreadMain {
         endTime = System.currentTimeMillis();
         elapsedTime = endTime - startTime;
 
-//        new CollatzInfoPrinter().prettyPrintCollatzList(collatzList);
+        new CollatzInfoPrinter().prettyPrintCollatzList(collatzList);
 
         System.out.format("the elapsed calculation time is %8d ms", elapsedTime);
     }

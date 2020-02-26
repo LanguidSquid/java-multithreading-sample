@@ -3,14 +3,14 @@ Multithreading with Collatz
 
 This is just a basic example of multithreading.
 
-In `com.charter.enterprise.collatz.SingleThreadMain` you will find a basic usage
-of our `com.charter.enterprise.collatz.util.Collatz` object to calculate
+In `com.blake.multithreaded.collatz.SingleThreadMain` you will find a basic usage
+of our `com.blake.multithreaded.collatz.util.Collatz` object to calculate
 collatz iterations on a set of numbers. 
 
 For reference on the Collatz Algorithm see the [Wikipedia Article](https://en.wikipedia.org/wiki/Collatz_conjecture)
 
 #### Basic Multithreading
-In `com.charter.enterprise.collatz.BasicMultithreadedMain` you will find an updated version of the logic 
+In `com.blake.multithreaded.collatz.BasicMultithreadedMain` you will find an updated version of the logic 
 from `SingleThreadMain` that takes advantage of some of Java's built-in multithreading 
 utilities.
 
