@@ -1,0 +1,19 @@
+{
+  "name": "typescript-multithreading-sample",
+  "version": "1.0.0",
+  "description": "A basic example of multithreading in TypeScript using the Collatz conjecture",
+  "main": "dist/single-thread-main.js",
+  "scripts": {
+    "build": "tsc",
+    "single-thread": "npm run build && node dist/single-thread-main.js",
+    "basic-multithread": "npm run build && node dist/basic-multithreaded-main.js",
+    "advanced-multithread": "npm run build && node dist/advanced-cached-multithreaded-main.js"
+  },
+  "keywords": ["multithreading", "collatz", "typescript", "worker-threads"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
