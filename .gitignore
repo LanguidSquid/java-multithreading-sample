@@ -5,3 +5,10 @@
 *.iml
 
 out/*
+
+# TypeScript
+node_modules/
+dist/
+*.js
+*.js.map
+!src/worker/*.ts
